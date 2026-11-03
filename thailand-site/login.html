@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log In | ThaiTrails</title>
+<meta name="description" content="Log in to your ThaiTrails demo account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="index.html#home" aria-label="ThaiTrails home"><svg viewBox="0 0 48 48" width="42" height="42" aria-hidden="true"><g fill="#f4a261"><ellipse cx="24" cy="10" rx="6" ry="10"/><ellipse cx="24" cy="38" rx="6" ry="10"/><ellipse cx="10" cy="24" rx="10" ry="6"/><ellipse cx="38" cy="24" rx="10" ry="6"/></g><circle cx="24" cy="24" r="5" fill="#fff1e6"/></svg><span><strong>ThaiTrails</strong><em>Explore. Experience. Remember.</em></span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links" id="links"><a href="index.html#home">Home</a><a href="destinations.html">Destinations</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a><a class="active" aria-current="page" href="login.html">Account</a></nav>
+</header>
+<main class="subpage-main auth-main">
+  <section class="auth-card" id="login-card">
+    <p class="kicker">WELCOME BACK</p>
+    <h1>Log in</h1>
+    <p class="auth-warning">Demo account only: this static site does not verify passwords. Do not enter a real or reused password.</p>
+    <form class="auth-form" id="login-form" novalidate>
+      <label>Email address<input name="email" type="email" autocomplete="email" required><small></small></label>
+      <label>Password (demo only)<input name="password" type="password" autocomplete="current-password" required><small></small></label>
+      <p class="auth-error" id="login-error" role="alert" hidden></p>
+      <button class="btn btn-teal" type="submit">Log in</button>
+    </form>
+    <p class="auth-switch">New to ThaiTrails? <a data-auth-link="signup" href="signup.html">Create an account</a></p>
+  </section>
+  <section class="auth-card" id="login-session" hidden>
+    <p class="kicker">YOU'RE SIGNED IN</p>
+    <h1 id="login-greeting">Welcome</h1>
+    <p class="auth-welcome">You're signed in. Your Thailand adventure is ready to explore.</p>
+    <a class="btn btn-teal" id="login-continue" href="index.html">Continue to ThaiTrails</a>
+    <a class="btn btn-teal" href="signout.html">Sign out</a>
+  </section>
+</main>
+<footer class="footer"><p class="copy">© 2026 ThaiTrails. All rights reserved. · <a href="image-credits.html">Photo credits</a></p></footer>
+<script src="script.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

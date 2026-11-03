@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traveler Reviews | ThaiTrails</title>
+<meta name="description" content="Read verified traveler feedback about ThaiTrails trips to Thailand.">
+<script>if (!sessionStorage.getItem('thaitrails-demo-session-email')) document.documentElement.classList.add('auth-required');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="index.html#home" aria-label="ThaiTrails home"><svg viewBox="0 0 48 48" width="42" height="42" aria-hidden="true"><g fill="#f4a261"><ellipse cx="24" cy="10" rx="6" ry="10"/><ellipse cx="24" cy="38" rx="6" ry="10"/><ellipse cx="10" cy="24" rx="10" ry="6"/><ellipse cx="38" cy="24" rx="10" ry="6"/></g><circle cx="24" cy="24" r="5" fill="#fff1e6"/></svg><span><strong>ThaiTrails</strong><em>Explore. Experience. Remember.</em></span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="index.html#home">Home</a><a href="index.html#overview">Trip Overview</a><a href="destinations.html">Destinations</a><a class="active" aria-current="page" href="reviews.html">Reviews</a><a href="contact.html">Contact</a><a href="login.html">Account</a>
+    <a class="btn btn-teal nav-cta" href="index.html#contact">Book Your Trip</a>
+  </nav>
+</header>
+<main class="subpage-main">
+  <section class="subpage-hero reviews-hero">
+    <p class="kicker light">TRAVELER STORIES</p>
+    <h1>Reviews</h1>
+    <p>Honest feedback helps every traveler plan with confidence.</p>
+  </section>
+  <section class="reviews reviews-page-list">
+    <p class="kicker">TRAVELER REVIEWS</p>
+    <h2>What Our Travelers Say</h2>
+    <div class="cards" id="cards">
+      <article class="review"><header><img src="images/av1.jpg" alt=""><div><h3>Sarah M.</h3><span>United Kingdom</span><div class="stars" aria-label="5 stars">★★★★★</div></div></header><p>Thailand was absolutely beautiful! I loved exploring the temples in Bangkok and relaxing on the stunning beaches. It was an unforgettable experience.</p></article>
+      <article class="review"><header><img src="images/av2.jpg" alt=""><div><h3>James T.</h3><span>Canada</span><div class="stars" aria-label="5 stars">★★★★★</div></div></header><p>From the local food to the breathtaking Phi Phi Islands, every moment was special. I would definitely recommend this trip to anyone visiting Thailand.</p></article>
+      <article class="review"><header><img src="images/av3.jpg" alt=""><div><h3>Aisha B.</h3><span>Nigeria</span><div class="stars" aria-label="5 stars">★★★★★</div></div></header><p>I loved the beautiful scenery, cultural experiences, and peaceful island views. It was the perfect mix of adventure and relaxation!</p></article>
+      <article class="review"><header><img src="images/av4.jpg" alt=""><div><h3>Emily R.</h3><span>Australia</span><div class="stars" aria-label="5 stars">★★★★★</div></div></header><p>Everything about this trip felt special, from discovering Thailand's rich culture to trying new foods and meeting wonderful people.</p></article>
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </section>
+  <section class="review-share" id="share-experience">
+    <p class="kicker">YOUR STORY MATTERS</p>
+    <h2>Share your experience</h2>
+    <p>Tell us what you enjoyed. Your email app will open with your story ready to send. We’ll ask your permission before publishing it.</p>
+    <form class="review-form" id="review-form">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Where are you from? <span class="optional">(optional)</span><input name="location" autocomplete="country-name"></label>
+      <label>Your experience<textarea name="review" rows="5" minlength="10" required></textarea></label>
+      <p class="auth-error" id="review-error" role="alert" hidden></p>
+      <button class="btn btn-teal" type="submit">Prepare my review email</button>
+    </form>
+    <p class="review-form-success" id="review-success" role="status" hidden>Your email is ready. Select the button below to open your mail app and send it.</p>
+    <a class="btn btn-outline review-email" id="review-email" href="mailto:hello@thaitrails.com" hidden>Email your experience →</a>
+  </section>
+  <section class="subpage-cta"><h2>Explore the sample trip</h2><p>See the destinations and sample itinerary before you enquire.</p><a class="btn btn-outline" href="destinations.html">Explore destinations →</a><a class="btn btn-teal" href="index.html#contact">Request a trip →</a></section>
+</main>
+<footer class="footer">
+  <div class="foot-grid">
+    <div class="foot-brand"><a class="logo" href="index.html#home"><span><strong>ThaiTrails</strong><em>Explore. Experience. Remember.</em></span></a><p>Discover Thailand, one adventure at a time.</p></div>
+    <div><h4>QUICK LINKS</h4><ul><li><a href="index.html#home">Home →</a></li><li><a href="destinations.html">Destinations →</a></li><li><a href="reviews.html">Reviews →</a></li><li><a href="contact.html">Contact →</a></li><li><a href="login.html">Account →</a></li></ul></div>
+    <div><h4>GET IN TOUCH</h4><ul><li><a href="mailto:hello@thaitrails.com">hello@thaitrails.com</a></li><li><a href="tel:+2347063244149">+234 706 324 4149</a></li></ul></div>
+  </div>
+  <p class="copy">© 2026 ThaiTrails. All rights reserved. · <a href="image-credits.html">Photo credits</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
